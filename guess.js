@@ -9,6 +9,8 @@ window.onload = function() {
 }
 
 function guessingGame() {
+  document.getElementById("resultsDisp").innerHTML = "";
+
   var username = prompt("What is your name?");
 
   alert("Welcome to the game "+username+"!");
@@ -19,15 +21,24 @@ function guessingGame() {
 
     if (response === questions[i][1]) {
       alert("Congratulations "+username+"! That is correct.");
-      questions[i][2] = "correct";
+      questions[i][2] = "Correct";
       i++;
     } else if (response === "no" || response == "yes") {
       alert("Sorry "+username+". That is incorrect.");
-      questions[i][2] = "incorrect";
+      questions[i][2] = "Incorrect";
       i++;
     } else {
       alert("Please enter either yes/no.");
       continue;
     }
   }
+
+  displayResults(username);
+}
+
+function displayResults(username) {
+  var res = document.getElementById("resultsDisp");
+  res.innerHTML = "Results for "+username+":<br>";
+  for (var i = 0;i < questions.length;i++)
+    res.innerHTML += "Question "+(i+1)+": "+questions[i][2]+"<br>";
 }
