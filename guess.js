@@ -1,4 +1,4 @@
-var questions = [["Do cars run on dragon tears?", "no"],
+var questions = [["Does Trent live in Bothell?", "yes"],
                  ["Is the best flavor of green tea the raspberry flavor?", "yes"],
                  ["Do dogs enjoy human pain like cats do?", "no"],
                  ["Is coming questions for the game harder and more time consuming than coding the game itself?", "yes"]];
