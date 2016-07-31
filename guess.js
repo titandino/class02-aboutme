@@ -53,10 +53,8 @@ function guessingGame() {
 function validResponse(response, index) {
   if (response) {
     var answers = questions[index].slice(1);
-    for (var i = 0;i < answers.length;i++) {
-      if (response.toLowerCase() === answers[i]) {
+    if (answers.indexOf(response.toLowerCase()) >= 0) {
         return "Correct";
-      }
     }
     return "Incorrect";
   }
