@@ -1,9 +1,20 @@
-var questions = [["Does Trent live in Bothell?", "yes"],
-                 ["Is the best flavor of green tea the raspberry flavor?", "yes"],
-                 ["Do dogs enjoy human pain like cats do?", "no"],
-                 ["Is coming questions for the game harder and more time consuming than coding the game itself?", "yes"]];
+var questions = [["Does Trent live in Bothell?",
+                    "yes", "y"],
+                 ["What is the best flavor of Xing tea?",
+                    "raspberry", "mango"],
+                 ["Do dogs enjoy human pain like cats do?",
+                    "no", "n"],
+                 ["Trent's favorite color is neon green.",
+                    "yes", "y"],
+                 ["Name a game Trent has played for more than 200 hours.",
+                    "runescape", "tera", "pokemon", "borderlands", "trove", "minecraft"],
+                 ["Sample text.exe",
+                    "no"]];
+
+var username;
 
 window.onload = function() {
+  document.getElementById("startButton").addEventListener("click", guessingGame);
   for (var i = 0;i < questions.length;i++)
     document.getElementById("questionDisp").innerHTML += questions[i][0]+"<br>";
 }
@@ -11,34 +22,49 @@ window.onload = function() {
 function guessingGame() {
   document.getElementById("resultsDisp").innerHTML = "";
 
-  var username = prompt("What is your name?");
+  while(!username)
+    username = prompt("What is your name?");
 
   alert("Welcome to the game "+username+"!");
   alert("You will now be asked a series of questions to respond yes or no to.");
 
   for (var i = 0;i < questions.length;) {
-    var response = prompt(questions[i][0]).toLowerCase();
+    var response = prompt(questions[i][0]);
 
-    if (response === questions[i][1]) {
-      alert("Congratulations "+username+"! That is correct.");
-      questions[i][2] = "Correct";
-      i++;
-    } else if (response === "no" || response == "yes") {
-      alert("Sorry "+username+". That is incorrect.");
-      questions[i][2] = "Incorrect";
+    var validated = validResponse(response, i);
+    if (validated) {
+      if (validated === "Correct") {
+        alert("Congratulations "+username+"! That is correct.");
+        questions[i].push("Correct");
+      } else {
+        alert("Sorry "+username+". That is incorrect.");
+        questions[i].push("Incorrect");
+      }
       i++;
     } else {
-      alert("Please enter either yes/no.");
+      alert("Please enter either yes/no or y/n.");
       continue;
     }
   }
 
-  displayResults(username);
+  displayResults();
 }
 
-function displayResults(username) {
+function validResponse(response, index) {
+  if (response) {
+    var answers = questions[index].slice(1);
+    for (var i = 0;i < answers.lengh;i++) {
+      if (response.toLowerCase() == answers[i])
+        return "Correct";
+    }
+    return "Incorrect";
+  }
+  return null;
+}
+
+function displayResults() {
   var res = document.getElementById("resultsDisp");
   res.innerHTML = "Results for "+username+":<br>";
   for (var i = 0;i < questions.length;i++)
-    res.innerHTML += "Question "+(i+1)+": "+questions[i][2]+"<br>";
+    res.innerHTML += "Question "+(i+1)+": "+questions[i].pop()+"<br>";
 }
