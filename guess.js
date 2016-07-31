@@ -6,10 +6,10 @@ var questions = [["Does Trent live in Bothell?",
                     "no", "n"],
                  ["Trent's favorite color is neon green.",
                     "yes", "y"],
-                 ["Name a game Trent has played for more than 200 hours.",
-                    "runescape", "tera", "pokemon", "borderlands", "trove", "minecraft"],
-                 ["Sample text.exe",
-                    "no"]];
+                 ["Name a game Trent has played for more than 1000 hours.",
+                    "runescape", "tera", "pokemon", "trove", "minecraft", "counterstrike", "csgo", "league of legends", "league"],
+                 ["What would you do if the green left the grass on the other side?",
+                    "i would make like a tree and leave"]];
 
 var username;
 
