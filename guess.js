@@ -32,7 +32,6 @@ function guessingGame() {
     var response = prompt(questions[i][0]);
 
     var validated = validResponse(response, i);
-    console.log("Validated response: "+validated);
     if (validated) {
       if (validated === "Correct") {
         alert("Congratulations "+username+"! That is correct.");
@@ -54,10 +53,8 @@ function guessingGame() {
 function validResponse(response, index) {
   if (response) {
     var answers = questions[index].slice(1);
-    console.log("Answers being tested: "+answers);
     for (var i = 0;i < answers.length;i++) {
       if (response.toLowerCase() === answers[i]) {
-        console.log("Correct answer found: "+answers[i]);
         return "Correct";
       }
     }
