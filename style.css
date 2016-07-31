@@ -1,0 +1,45 @@
+body {
+  font-family: monospace;
+  background: linear-gradient(white, #66ff60 90%);
+  font-size: 14px;
+}
+
+.resume {
+  margin: 1%;
+  position: relative;
+  float: left;
+}
+
+.guessingGame {
+  float: left;
+  margin: 1%;
+}
+
+.projName {
+  font-weight: bold;
+}
+
+.projDate {
+  font-style: italic;
+  font-size: 12px;
+}
+
+#projects {
+  width: 75%;
+  float: left;
+  margin: 1%;
+}
+
+#bio {
+  float: left;
+}
+
+#skills {
+  float: left;
+}
+
+#startButton {
+  background-color: white;
+  border-radius: 16px;
+  border-color: white;
+}
