@@ -76,8 +76,14 @@ function resetResults() {
 }
 
 function displayResults() {
-  createParagraph("resultsDisp", "Results for "+username+":");
-	for (var i = 0;i < questions.length;i++) {
-    createParagraph("resultsDisp", "Question "+(i+1)+": "+questions[i].pop());
+  createParagraph("resultsDisp", username+"'s answers:");
+  var total = questions.length;
+  var correct = 0;
+	for (var i = 0;i < total;i++) {
+    var result = questions[i].pop();
+    if (result === "Correct")
+      correct++;
+    createParagraph("resultsDisp", "Question "+(i+1)+": "+result);
 	}
+  createParagraph("resultsDisp", "You got "+correct+" of the questions correct. That's "+((correct/total)*100).toPrecision(3)+"%!");
 }
