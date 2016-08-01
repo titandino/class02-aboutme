@@ -26,6 +26,8 @@ function guessingGame() {
   while(!username)
     username = prompt("What is your name?");
 
+  username = username.charAt(0).toUpperCase()+username.slice(1);
+
   alert("Welcome to the game "+username+"!");
   alert("You will now be asked a series of questions to respond yes or no to.");
 
