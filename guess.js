@@ -21,7 +21,7 @@ window.onload = function() {
 }
 
 function guessingGame() {
-  document.getElementById("resultsDisp").textContent = "";
+  resetResults();
 
   while(!username)
     username = prompt("What is your name?");
@@ -67,6 +67,12 @@ function createParagraph(parentId, text) {
   var p = document.createElement("P");
   p.appendChild(textNode);
   document.getElementById(parentId).appendChild(p);
+}
+
+function resetResults() {
+  var resultsNode = document.getElementById("resultsDisp");
+  while(resultsNode.hasChildNodes())
+    resultsNode.removeChild(resultsNode.lastChild);
 }
 
 function displayResults() {
