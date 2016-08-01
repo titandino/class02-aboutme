@@ -8,16 +8,19 @@ body {
   font-size: 14px;
 }
 
+h2 {
+  text-align: center;
+}
+
+.boldTitle {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .resume {
   margin: 1%;
   position: relative;
   float: left;
-}
-
-.guessingGame {
-  float: left;
-  margin: 1%;
-  width: 50%;
 }
 
 .projName {
@@ -27,6 +30,19 @@ body {
 .projDate {
   font-style: italic;
   font-size: 12px;
+}
+
+.guessingGame {
+  float: left;
+  width: 50%;
+}
+
+.questions {
+  float: left;
+}
+
+.results {
+  float: right;
 }
 
 #projects {
@@ -47,6 +63,10 @@ body {
 
 #startButton {
   background-color: white;
-  border-radius: 16px;
+  border-radius: 8px;
   border-color: white;
+  border-style: none;
+  padding: 20px;
+  font-weight: bolder;
+  margin: 0px 39%;
 }
