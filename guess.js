@@ -15,12 +15,13 @@ var username;
 
 window.onload = function() {
   document.getElementById("startButton").addEventListener("click", guessingGame);
-  for (var i = 0;i < questions.length;i++)
-    document.getElementById("questionDisp").innerHTML += questions[i][0]+"<br>";
+  for (var i = 0;i < questions.length;i++) {
+    createParagraph("questionDisp", questions[i][0]);
+  }
 }
 
 function guessingGame() {
-  document.getElementById("resultsDisp").innerHTML = "";
+  document.getElementById("resultsDisp").textContent = "";
 
   while(!username)
     username = prompt("What is your name?");
@@ -61,9 +62,16 @@ function validResponse(response, index) {
   return null;
 }
 
+function createParagraph(parentId, text) {
+  var textNode = document.createTextNode(text);
+  var p = document.createElement("P");
+  p.appendChild(textNode);
+  document.getElementById(parentId).appendChild(p);
+}
+
 function displayResults() {
-  var res = document.getElementById("resultsDisp");
-  res.innerHTML = "Results for "+username+":<br>";
-  for (var i = 0;i < questions.length;i++)
-    res.innerHTML += "Question "+(i+1)+": "+questions[i].pop()+"<br>";
+  createParagraph("resultsDisp", "Results for "+username+":");
+	for (var i = 0;i < questions.length;i++) {
+    createParagraph("resultsDisp", "Question "+(i+1)+": "+questions[i].pop());
+	}
 }
