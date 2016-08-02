@@ -4,20 +4,53 @@ html {
 
 body {
   font-family: arial;
-  background: linear-gradient(white, #66ff60 90%);
+  background: #66ff66;
   font-size: 14px;
 }
 
+h1 {
+  margin: 0 5%;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 5%;
+}
+
+.mainbody {
+  margin: 0 5%;
+  margin-right: -20%; //TODO: figure out why the hell I have to do this BS for it to be even
+}
+
 .resume {
-  margin: 1%;
-  position: relative;
   float: left;
+  width: 60%;
 }
 
 .guessingGame {
   float: left;
-  margin: 1%;
-  width: 50%;
+  width: 60%;
+}
+
+.skills {
+  float: left;
+}
+
+.skills ul {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.boldTitle {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.bolderTitle {
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .projName {
@@ -29,24 +62,29 @@ body {
   font-size: 12px;
 }
 
-#projects {
-  width: 75%;
+.questions {
   float: left;
-  margin: 1%;
+}
+
+.results {
+  float: right;
+  margin: 0;
+}
+
+#projects {
+
 }
 
 #bio {
-  margin-top: 5px;
-  float: left;
-}
 
-#skills {
-  float: left;
-  width: 15%;
 }
 
 #startButton {
   background-color: white;
-  border-radius: 16px;
+  border-radius: 8px;
   border-color: white;
+  border-style: none;
+  padding: 20px;
+  font-weight: bolder;
+  margin: 0px 39%;
 }
