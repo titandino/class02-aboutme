@@ -37,7 +37,8 @@ h2 {
 
 .skills ul {
   list-style: none;
-  margin-left: -40px;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .boldTitle {
