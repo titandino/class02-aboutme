@@ -142,7 +142,7 @@ function displayResults() {
   createParagraph("resultsDisp", username+"'s answers:");
   var total = questions.length;
   var correct = 0;
-	for (var i = 0;i < total;i++) {
+	for (var i = 0;i < questions.length;i++) {
     if (questions[i].result === "Correct")
       correct++;
 
