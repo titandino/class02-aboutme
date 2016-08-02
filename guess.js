@@ -16,7 +16,7 @@ var username;
 window.onload = function() {
   document.getElementById("startButton").addEventListener("click", guessingGame);
   for (var i = 0;i < questions.length;i++) {
-    createParagraph("questionDisp", questions[i][0]);
+    createParagraph("questionDisp", (i+1)+": "+questions[i][0]);
   }
 }
 

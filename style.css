@@ -4,12 +4,40 @@ html {
 
 body {
   font-family: arial;
-  background: linear-gradient(white, #66ff60 90%);
+  background: #66ff66;
   font-size: 14px;
+}
+
+h1 {
+  margin: 0 5%;
 }
 
 h2 {
   text-align: center;
+  margin: 0 5%;
+}
+
+.mainbody {
+  margin: 0 5%;
+}
+
+.resume {
+  float: left;
+  width: 60%;
+}
+
+.guessingGame {
+  float: left;
+  width: 60%;
+}
+
+.skills {
+  float: left;
+}
+
+.skills ul {
+  list-style: none;
+  margin-left: -40px;
 }
 
 .boldTitle {
@@ -17,10 +45,10 @@ h2 {
   text-decoration: underline;
 }
 
-.resume {
-  margin: 1%;
-  position: relative;
-  float: left;
+.bolderTitle {
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .projName {
@@ -30,11 +58,6 @@ h2 {
 .projDate {
   font-style: italic;
   font-size: 12px;
-}
-
-.guessingGame {
-  float: left;
-  width: 60%;
 }
 
 .questions {
@@ -47,19 +70,11 @@ h2 {
 }
 
 #projects {
-  width: 75%;
-  float: left;
-  margin: 1%;
+
 }
 
 #bio {
-  margin-top: 5px;
-  float: left;
-}
 
-#skills {
-  float: left;
-  width: 15%;
 }
 
 #startButton {
