@@ -1,16 +1,35 @@
+@font-face{
+  font-family: "Triforce";
+  src: url('font/Triforce.ttf');
+}
+
 html {
   height: 100%;
 }
 
+header {
+  margin-top: 3%;
+}
+
 body {
   font-family: arial;
-  background: #4a964a;
+  background: #eeddc3;
+  background-image: url("img/papyrus.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-size: 14px;
 }
 
 h1, h2 {
+  font-family: "Triforce";
   display: table;
   margin: 0 auto;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 nav ul {
@@ -29,11 +48,11 @@ nav li {
 
 nav a {
   text-decoration: none;
-  border: 5px;
-  border-radius: 5px;
-  border-color: white;
-  border-style: solid;
-  background-color: white;
+}
+
+nav a img {
+  width: 60px;
+  height: auto;
 }
 
 .main-body {
@@ -113,6 +132,7 @@ nav a {
 
 #education {
   width: 45%;
+  vertical-align: top;
 }
 
 #top10games {
