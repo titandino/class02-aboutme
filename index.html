@@ -12,7 +12,7 @@
     </header>
     <section class="mainbody">
       <section class="resume">
-        <div id="bio">
+        <div class="resume-content" id="bio">
           <p class="bolderTitle">About Me</p>
           <p>I am a passionate gamer and developer who found a strong interest in game
           programming during middle school and have been pursuing ever since. I have
@@ -21,7 +21,7 @@
           Someday in the future I would love to work for a company like Valve, but
           until then, I would be happy in pretty much any programming position.</p>
         </div>
-        <div id="projects">
+        <div class="resume-content" id="projects">
           <p class="bolderTitle">Projects</p>
           <p class="projName">Programmer/Project Manager — Runescape private servers written in Java.</p>
           <p class="projDate">June 2007- PRESENT</p>
@@ -35,7 +35,7 @@
           using the FMOD API. Worked a lot on the physics and graphics end which involved
           the usual matrices for sprite transformations and vectors for physics and collision detection.</p>
         </div>
-        <div id="top10games">
+        <div class="resume-content" id="top10games">
           <p class="bolderTitle">Top 10 Favorite Games</p>
           <ol>
             <li>LoZ - Wind Waker</li>
@@ -49,6 +49,18 @@
             <li>Counterstrike GO</li>
             <li>Minecraft</li>
           </ol>
+        </div>
+        <div class="guessingGame">
+          <h2>Guessing Game</h2>
+          <div class="questions">
+            <p class="boldTitle">Questions</p>
+            <div id="questionDisp"></div>
+          </div>
+          <div class="results">
+            <p class="boldTitle">Results</p>
+            <div id="resultsDisp"></div>
+          </div>
+          <button type="button" id="startButton">Play Guessing Game</button>
         </div>
       </section>
       <section class="skills">
@@ -97,18 +109,6 @@
             <li>PuTTY</li>
           </ul>
         </section>
-      </section>
-      <section class="guessingGame">
-        <h2>Guessing Game</h2>
-        <div class="questions">
-          <p class="boldTitle">Questions</p>
-          <div id="questionDisp"></div>
-        </div>
-        <div class="results">
-          <p class="boldTitle">Results</p>
-          <div id="resultsDisp"></div>
-        </div>
-        <button type="button" id="startButton">Play Guessing Game</button>
       </section>
     </section>
   </body>
