@@ -47,11 +47,11 @@ nav li {
 
 nav a {
   text-decoration: none;
-  border: 5px;
-  border-radius: 5px;
-  border-color: white;
-  border-style: solid;
-  background-color: white;
+}
+
+nav a img {
+  width: 60px;
+  height: auto;
 }
 
 .main-body {
