@@ -9,7 +9,8 @@ body {
 }
 
 h1 {
-  margin: 0 5%;
+  display: table;
+  margin: 0 auto;
 }
 
 h2 {
@@ -18,22 +19,23 @@ h2 {
 }
 
 .mainbody {
-  margin: 0 5%;
-  margin-right: -20%; //TODO: figure out why the hell I have to do this BS for it to be even
+  width: 75%;
+  margin: 0 auto;
+}
+
+.resume-content {
+
 }
 
 .resume {
-  float: left;
-  width: 60%;
-}
-
-.guessingGame {
-  float: left;
-  width: 60%;
+  width: 80%;
+  margin: 0;
+  display: inline-block;
 }
 
 .skills {
-  float: left;
+  float: right;
+  width: auto;
 }
 
 .skills ul {
