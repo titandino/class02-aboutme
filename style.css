@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: arial;
-  background: #66ff66;
+  background: #00a500;
   font-size: 14px;
 }
 
@@ -14,8 +14,31 @@ h1 {
 }
 
 h2 {
-  text-align: center;
-  margin: 0 5%;
+  display: table;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: table;
+  padding: 0;
+  border: 0;
+  margin: 10px auto;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  border: 5px;
+  border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+  background-color: white;
 }
 
 .mainbody {
@@ -56,29 +79,55 @@ h2 {
 }
 
 .projName {
+  font-size: 15px;
+  margin-bottom: 0px;
   font-weight: bold;
 }
 
 .projDate {
+  margin-top: 0px;
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;
+}
+
+.projDesc {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .questions {
+  display: inline-block;
   float: left;
 }
 
 .results {
   float: right;
+  display: inline-block;
   margin: 0;
 }
 
-#projects {
+.guessingGame {
+  display: inline-block;
+  width: 80%;
+}
 
+#projects {
+  display: inline-block;
+  width: 50%;
+}
+
+#education {
+  display: inline-block;
+  width: 45%;
 }
 
 #bio {
 
+}
+
+#guessingGameTitle {
+  margin: 10px auto;
+  text-align: center;
 }
 
 #startButton {

@@ -2,13 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>About Me</title>
+    <title>Trenton Kress</title>
     <link rel="stylesheet" href="style.css">
     <script src="guess.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
       <h1>Trenton Kress</h1>
+      <h2>Software Engineer</h2>
+      <nav>
+        <ul>
+          <li><a href="https://github.com/titandino" target="blank">GitHub</a></li>
+          <li><a href="https://linkedin" target="blank">LinkedIn</a></li>
+          <li><a href="https://twitter.com/titandino" target="blank">Twitter</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="mainbody">
       <section class="resume">
@@ -20,6 +28,21 @@
           a few classes during high school and my small college excursion as well.
           Someday in the future I would love to work for a company like Valve, but
           until then, I would be happy in pretty much any programming position.</p>
+        </div>
+        <div class="resume-content" id="education">
+          <p class="bolderTitle">Education</p>
+          <p class="projName">Lake Washington Institute of Technology, ​Kirkland, WA</p>
+          <p class="projDate">September 2014 - January 2016</p>
+          <p class="projDesc">Certificate of Completion in C++/C# Development</p>
+
+          <p class="projName">DigiPen Institute of Technology, ​Kirkland, WA</p>
+          <p class="projDate">September 2011- June 2013</p>
+          <p class="projDesc">Video Game Programming and App Development</p>
+          <p class="projDesc">WANIC Video Game Programming Courses</p>
+
+          <p class="projName">Cascadia Community College, ​Bothell, WA</p>
+          <p class="projDate">September 2013- May 2014</p>
+          <p class="projDesc">Beginning Programming, Scripting, C++ 1 & 2</p>
         </div>
         <div class="resume-content" id="projects">
           <p class="bolderTitle">Projects</p>
@@ -51,7 +74,7 @@
           </ol>
         </div>
         <div class="guessingGame">
-          <h2>Guessing Game</h2>
+          <p id="guessingGameTitle" class="bolderTitle">Guessing Game</p>
           <div class="questions">
             <p class="boldTitle">Questions</p>
             <div id="questionDisp"></div>
