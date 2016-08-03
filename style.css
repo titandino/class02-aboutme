@@ -41,13 +41,14 @@ nav a {
   background-color: white;
 }
 
-.mainbody {
+.main-body {
   width: 75%;
+  min-width: 60em;
   margin: 0 auto;
 }
 
 .resume-content {
-
+  display: inline-block;
 }
 
 .resume {
@@ -67,30 +68,30 @@ nav a {
   padding-left: 0px;
 }
 
-.boldTitle {
+.bold-title {
   font-weight: bold;
   text-decoration: underline;
 }
 
-.bolderTitle {
+.bolder-title {
   font-size: 16px;
   font-weight: bolder;
   text-decoration: underline;
 }
 
-.projName {
+.item-name {
   font-size: 15px;
   margin-bottom: 0px;
   font-weight: bold;
 }
 
-.projDate {
+.item-date {
   margin-top: 0px;
   font-style: italic;
   font-size: 13px;
 }
 
-.projDesc {
+.item-desc {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -106,26 +107,24 @@ nav a {
   margin: 0;
 }
 
-.guessingGame {
+.guessing-game {
   display: inline-block;
   width: 80%;
 }
 
 #projects {
-  display: inline-block;
   width: 50%;
 }
 
 #education {
-  display: inline-block;
   width: 45%;
 }
 
-#bio {
-
+#top10games {
+  width: 20%;
 }
 
-#guessingGameTitle {
+#guessing-game-title {
   margin: 10px auto;
   text-align: center;
 }
