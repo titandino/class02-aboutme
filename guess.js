@@ -90,40 +90,40 @@ function GameQuestion(question, answers) {
   this.answers = answers;
   this.result = 'null';
   this.specialResult = 'null';
-
-  this.verifyAnswer = function() {
-    var validated = null;
-    while(!validated) {
-      var response = prompt(this.question);
-
-      validated = this.validResponse(response);
-      if (validated) {
-        if (validated === 'Correct') {
-          alert('Congratulations ' + username + '! That is correct.');
-          this.result = 'Correct';
-          break;
-        } else {
-          alert('Sorry ' + username + '. That is incorrect.');
-          this.result = 'Incorrect';
-          break;
-        }
-      } else {
-        console.log('Answer was null. Re-asking.');
-        continue;
-      }
-    }
-  };
-
-  this.validResponse = function(response) {
-    if (response) {
-      if (this.answers.indexOf(response.toLowerCase()) >= 0) {
-        return 'Correct';
-      }
-      return 'Incorrect';
-    }
-    return null;
-  };
 }
+
+GameQuestion.prototype.validResponse = function(response) {
+  if (response) {
+    if (this.answers.indexOf(response.toLowerCase()) >= 0) {
+      return 'Correct';
+    }
+    return 'Incorrect';
+  }
+  return null;
+};
+
+GameQuestion.prototype.verifyAnswer = function() {
+  var validated = null;
+  while(!validated) {
+    var response = prompt(this.question);
+
+    validated = this.validResponse(response);
+    if (validated) {
+      if (validated === 'Correct') {
+        alert('Congratulations ' + username + '! That is correct.');
+        this.result = 'Correct';
+        break;
+      } else {
+        alert('Sorry ' + username + '. That is incorrect.');
+        this.result = 'Incorrect';
+        break;
+      }
+    } else {
+      console.log('Answer was null. Re-asking.');
+      continue;
+    }
+  }
+};
 
 function createParagraph(parentId, text) {
   var textNode = document.createTextNode(text);
