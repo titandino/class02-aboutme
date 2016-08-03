@@ -8,12 +8,7 @@ body {
   font-size: 14px;
 }
 
-h1 {
-  display: table;
-  margin: 0 auto;
-}
-
-h2 {
+h1, h2 {
   display: table;
   margin: 0 auto;
 }
