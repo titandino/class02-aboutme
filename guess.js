@@ -148,9 +148,9 @@ function displayResults() {
 
     if (questions[i].specialResult === 'null') {
       createParagraph('resultsDisp', 'Question ' + (i + 1) + ': ' + questions[i].result);
-      total--;
     } else {
       createParagraph('resultsDisp', 'Question ' + (i + 1) + ': ' + questions[i].specialResult);
+      total--;
     }
   }
   createParagraph('resultsDisp', 'You got ' + correct + ' of the questions correct. That\'s ' + ((correct / total) * 100).toPrecision(3) + '%!');
