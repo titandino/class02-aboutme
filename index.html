@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Trenton Kress</title>
     <link rel="stylesheet" href="style.css">
-    <script src="guess.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
@@ -22,6 +21,7 @@
     <section class="main-body">
       <section class="resume">
         <div class="resume-content" id="bio">
+          <img class="float-beside" src="img/link1.png" alt="Link"/>
           <p class="bolder-title">About Me</p>
           <p>I am a passionate gamer and developer who found a strong interest in game
           programming during middle school and have been pursuing ever since. I have
@@ -45,6 +45,18 @@
           <p class="item-date">September 2013- May 2014</p>
           <p class="item-desc">Beginning Programming, Scripting, C++ 1 & 2</p>
         </div>
+        <div class="resume-content" id="experience">
+          <p class="bolder-title">Experience</p>
+          <p class="item-name">QFC - ​Bothell, WA</p>
+          <p class="item-date">November 2015 - June 2016</p>
+          <p class="item-desc">Inventory Assistant Dairy Department & Checker</p>
+
+          <p class="item-name">QFC - ​Bothell, WA</p>
+          <p class="item-date">March 2013 - November 2015</p>
+          <p class="item-desc">Courtesy Clerk</p>
+        </div>
+        <img class="float-beside-r" src="img/makar.png" alt="Makar"/>
+        <img class="float-beside" src="img/link3.png" alt="Makar"/>
         <div class="resume-content" id="projects">
           <p class="bolder-title">Projects</p>
           <p class="item-name">Programmer/Project Manager — Runescape private servers written in Java.</p>
@@ -60,7 +72,7 @@
           the usual matrices for sprite transformations and vectors for physics and collision detection.</p>
         </div>
         <div class="resume-content" id="top10games">
-          <p class="bolder-title">Top 10 Favorite Games</p>
+          <p class="bolder-title">Favorite Games</p>
           <ol>
             <li>LoZ - Wind Waker</li>
             <li>RuneScape</li>
@@ -74,22 +86,10 @@
             <li>Minecraft</li>
           </ol>
         </div>
-        <div class="guessing-game">
-          <p id="guessing-game-title" class="bolder-title">Guessing Game</p>
-          <div class="questions">
-            <p class="bold-title">Questions</p>
-            <div id="questionDisp"></div>
-          </div>
-          <div class="results">
-            <p class="bold-title">Results</p>
-            <div id="resultsDisp"></div>
-          </div>
-          <button type="button" id="startButton">Play Guessing Game</button>
-        </div>
       </section>
       <section class="skills">
         <p class="bolder-title">Skills</p>
-        <section id="languages">
+        <section class="skills-list">
           <ul><b>Languages:</b>
             <li>Java</li>
             <li>C++</li>
@@ -101,7 +101,7 @@
             <li>JavaScript</li>
           </ul>
         </section>
-        <section id="programming">
+        <section class="skills-list">
           <ul><b>Programming:</b>
             <li>Object Oriented Design</li>
             <li>Debugging</li>
@@ -112,7 +112,7 @@
             <li>Shaders</li>
           </ul>
         </section>
-        <section id="apis">
+        <section class="skills-list">
           <ul><b>APIs:</b>
             <li>Java Platform SE (6/7/8)</li>
             <li>C/C++ STL</li>
@@ -123,7 +123,7 @@
             <li>Netty (Java)</li>
           </ul>
         </section>
-        <section id="tools">
+        <section class="skills-list">
           <ul><b>Tools:</b>
             <li>Eclipse</li>
             <li>Visual Studio</li>
