@@ -27,7 +27,7 @@ h1 {
   display: table;
   margin: 0 auto;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 4em;
 }
 
 h2 {
@@ -35,7 +35,7 @@ h2 {
   display: table;
   margin: 0 auto;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 2em;
 }
 
 nav ul {
@@ -103,26 +103,26 @@ nav a img {
 }
 
 .bold-title {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bolder;
 }
 
 .bolder-title {
   font-family: "Triforce";
-  font-size: 20px;
+  font-size: 1.7em;
   font-weight: bolder;
 }
 
 .item-name {
-  font-size: 18px;
+  font-size: 1em;
   margin-bottom: 0;
   font-weight: bold;
 }
 
 .item-date {
+  font-size: 0.8em;
   margin-top: 0;
   font-style: italic;
-  font-size: 13px;
 }
 
 .item-desc {
