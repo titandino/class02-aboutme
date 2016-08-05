@@ -62,6 +62,12 @@ nav a img {
   height: auto;
 }
 
+main {
+  width: 75%;
+  min-width: 60em;
+  margin: 0 auto;
+}
+
 .float-beside {
   float: left;
   height: 10em;
@@ -71,17 +77,12 @@ nav a img {
 }
 
 .float-beside-r {
+
   float: right;
   height: 10em;
   width: auto;
   vertical-align: top;
   margin-top: 3%;
-}
-
-.main-body {
-  width: 75%;
-  min-width: 60em;
-  margin: 0 auto;
 }
 
 .resume-content {
